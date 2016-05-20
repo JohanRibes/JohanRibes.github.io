@@ -20,35 +20,38 @@ print_hi('Tom')
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-
 ```ruby
 class Bibliotheque
- 
+
    # Accès direct au tableau de livres
    attr_reader :livres
-   
+
    # Méthode appelée à la création d'un objet bibliothèque qui initialise le tableau de livres
    def initialize
      @livres = []
    end
-   
+
    # Ajoute un livre à la bibliothèque, s'il n'y est pas déjà
-   def ajouter livre
+   def ajouter livre                                                      
      raise "Le livre #{livre} est déjà dans la bibliothèque" if @livres.include? livre
      @livres << livre
    end
-   
+
    # Retourne le nombre de livres dans la bibliothèque
    def taille
      @livres.length
    end
-   
+
    # Retourne la liste des auteurs ayant écrit ou co-écrit au moins un livre dans la bibliothèque
    def auteurs
      @livres.map { |livre| livre.auteurs }.flatten.uniq
    end
  end
 ```
+
+
+
+[jekyll-docs]: http://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
+
