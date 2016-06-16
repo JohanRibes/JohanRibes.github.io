@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "MIT 6.00 Introduction to Computer Science and Programming, Fall 2008"
+date:   2016-05-16 08:03:17 +0100
+categories: education
+---
+
+View the complete course at: http://ocw.mit.edu/6-00F08
+
+## Lec.1
+https://www.youtube.com/watch?v=k6U-i4gXkLM
+
+* Lecture 1: Goals of the course; what is computation; introduction to data types, operators, and variables
+* Instructors: Prof. Eric Grimson, Prof. John Guttag.
+
+### Notes 
+Program is a recipe.
+Build a description of the recipe, **on a sequence of primitive instructions**.
+To describe the recipe we do want a language.
+
+### Interpreted != Compiled
+
+#### Interpreted
+Control the flow that is going through the instructions and give you an ouptut.
+
+#### Compiled
+Intermediate step, create object code.
+It helps catch bugs and convert it into more efficient sequence of instructions.
+
+### Syntax vs. Semantic
+* Syntax: What words are legal expressions.
+* Static Semantic: Combination of legal expressions.
+* Semantics: What does the program. What happens on the screen. 
+
+### Python
+* Values: Numbers (int, float), Strings.
+* Operators: +, -, /, *, **.
+* Variable: Contains value(s).
+Shell testing, showing syntax errors, ands static semantic errors.
+
+```python
+>>>3/5
+0
+```
+
+> Maybe in the Bush economy.
+
+
+*end of Lec.1*
+
+## Lec.2
+https://www.youtube.com/watch?v=Pij6J0HsYFA
+
+* Lecture 2: Operators and operands; statements; branching, conditionals, and iteration
+* Instructors: Prof. Eric Grimson, Prof. John Guttag 
